@@ -65,23 +65,46 @@ module.exports = {
       },
       {
         test: /\.woff2(\?v=[0-9]\.[0-9]\.[0-9])?$/i,
-        loader: 'url-loader',
-        options: {
-          limit: 10000,
-          mimetype: 'application/font-woff2'
-        }
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 10000,
+              mimetype: 'application/font-woff2',
+              esModule: false,
+              name: "[name][contenthash:8].[ext]",
+              outputPath: "/assets/fonts"
+            }
+          }
+        ]
       },
       {
         test: /\.woff(\?v=[0-9]\.[0-9]\.[0-9])?$/i,
-        loader: 'url-loader',
-        options: {
-          limit: 10000,
-          mimetype: 'application/font-woff'
-        }
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 10000,
+              mimetype: 'application/font-woff',
+              esModule: false,
+              name: "[name][contenthash:8].[ext]",
+              outputPath: "/assets/fonts"
+            }
+          }
+        ]
       },
       {
-        test: /\.(ttf|eot|svg|otf)(\?v=[0-9]\.[0-9]\.[0-9])?$/i,
-        loader: 'file-loader'
+        test: /\.(ttf|eot|otf)(\?v=[0-9]\.[0-9]\.[0-9])?$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              esModule: false,
+              name: "[name][contenthash:8].[ext]",
+              outputPath: "/assets/fonts"
+            }
+          }
+        ]
       },
       {
         test: /\.html$/,
