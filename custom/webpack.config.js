@@ -3,6 +3,7 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const dotenv = require('dotenv-webpack');
 const path = require("path")
 
 const maindirectory = process.cwd()
@@ -44,6 +45,7 @@ module.exports = {
       },
       {
         test: /\.(css|scss)$/,
+        sideEffects: true,
         use: [
           'style-loader',
           'css-loader',
@@ -117,6 +119,7 @@ module.exports = {
     ]
   },
   plugins: [
+    new dotenv(),
     new CleanWebpackPlugin({
       dangerouslyAllowCleanPatternsOutsideProject: true,
       dry: false
