@@ -1,0 +1,17 @@
+{
+  "platform-version": "2.3",
+  "product": {
+    "freshworks_crm": {
+      "location": {
+        "left_nav_cti": {
+          "url": "index.html",
+          "icon": "icon.svg"
+        }
+      }
+    }
+  },
+  "engines": {
+    "node": "18.16.1",
+    "fdk": "9.0.2"
+  }
+}
