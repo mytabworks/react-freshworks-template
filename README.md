@@ -2,6 +2,21 @@
 
 https://developers.freshdesk.com/v2/docs/quick-start/
 
+# Quick start
+
+## Run locally
+https://developers.freshdesk.com/v2/docs/quick-start/#test_your_app
+
+"yarn start" or "npm run start" - run the .env (production) locally(localhost /dev mode)
+"yarn start:dev" or "npm run start:dev" - run the .env.development locally(localhost /dev mode)
+
+## Pack or Build app
+https://developers.freshdesk.com/v2/docs/quick-start/#validate_and_pack
+
+"yarn build" or "npm run build" - To pack the app for submission in .env (production)
+"yarn build:staging" or "npm run build:staging" - To pack the app for submission in .env.development
+"yarn build:uat" or "npm run build:uat" - To pack the app for submission in .env.uat
+
 # Built using SPA
 
 You can look on this for [more](https://fdk-spa-integration.netlify.app/react/#usage-of-existing-frontend-platform-features-in-react)
