@@ -6,7 +6,7 @@ export default {
     },
     brandSite: '',
     brandName: 'Mock',
-    landingPath: '/',
+    landingPath: './index.html',
     services: {
         endpoint: process.env.REACT_APP_DATA_API_URL!,
         env: process.env.REACT_APP_ENV!,

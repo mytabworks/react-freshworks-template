@@ -19,7 +19,7 @@ const NotFound: React.FunctionComponent<NotFoundProps> = ({}) => {
         <Layout>
             <div className="page-not-found">
                 <h1 className='error-color' >404</h1>
-                <h3>Page not found</h3>
+                <h3>Location not found</h3>
             </div>
         </Layout>
     )
