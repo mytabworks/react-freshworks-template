@@ -6,6 +6,14 @@
         "left_nav_cti": {
           "url": "index.html",
           "icon": "icon.svg"
+        },
+        "contact_entity_menu": {
+          "url": "index.html",
+          "icon": "icon.svg"
+        },
+        "full_page_app": {
+          "url": "index.html",
+          "icon": "icon.svg"
         }
       }
     }
